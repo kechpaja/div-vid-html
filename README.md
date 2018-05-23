@@ -4,7 +4,7 @@ Div-Vid-HTML
 After seeing a Twitter user post a (presumably joking) comment about how in
 some parallel universe HTML tags probably end with their reversed equivalents,
 I decided to write a quick Bash script to convert that variant of HTML to
-regular HTML. 
+regular HTML.
 
 Single-character tags, as well as the double-character tag "dd", have been
 replaced with new, non-palidromic tags: `an, bo, df, it, par, qu, st, un` in 
@@ -15,3 +15,9 @@ collisions with reversed versions of "td" and "tr".
 
 Original list of HTML tags was taken from 
 https://www.html-5-tutorial.com/all-html-tags.htm. 
+
+
+Note that this script is *very slow*, since I wrote it very hastily and didn't
+bother to optimize it, given that it is mostly a joke. If I have extra time at
+some point, I may try to reduce the number of calls to `sed` and/or otherwise
+speed up execution. 
